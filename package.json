@@ -1,0 +1,36 @@
+{
+  "name": "codeprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "build:watch": "npm run build -- --watch",
+    "build:production": "npm run build -- --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matatsuna/codeprint.git"
+  },
+  "author": "matatsuna <matatsuna@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matatsuna/codeprint/issues"
+  },
+  "homepage": "https://github.com/matatsuna/codeprint#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.17.1",
+    "webpack-command": "^0.4.1"
+  },
+  "dependencies": {
+    "codemirror": "^5.40.2",
+    "monaco-editor": "^0.14.3",
+    "monaco-editor-webpack-plugin": "^1.5.1"
+  }
+}
